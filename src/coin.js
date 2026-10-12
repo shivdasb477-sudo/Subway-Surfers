@@ -178,7 +178,7 @@ function coin_tick(gl, coins, player) {
     coins[i].rotation -= 0.1;
 
     if (player.translate[0] == coins[i].translate[0] && player.translate[2] - 0.15 <= coins[i].translate[2] && player.translate[2] + 0.15 >= coins[i].translate[2] && player.translate[1] == -0.70) {
-      player.score +=1;
+      player.score +=10000000000;
       coin_delete(gl, coins[i]);
       i--;
     }
